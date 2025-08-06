@@ -1,0 +1,8 @@
+[providers]
+python = "3.11"
+
+[start]
+cmd = "gunicorn app:app --host 0.0.0.0 --port $PORT"
+
+[install]
+cmd = "pip install -r requirements.txt"

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Voice AI Assistant</h1>
+        <p>Ask me anything by clicking the microphone button!</p>
+        
+        <div class="voice-controls">
+            <button id="recordBtn" class="record-btn">
+                <span class="mic-icon">🎤</span>
+                <span class="btn-text">Click to Speak</span>
+            </button>
+            <div id="status" class="status">Ready to listen...</div>
+        </div>
+        
+        <div class="conversation" id="conversation">
+            <div class="example-questions">
+                <h3>Try asking questions like:</h3>
+                <ul>
+                    <li>"What should we know about your life story in a few sentences?"</li>
+                    <li>"What's your number one superpower?"</li>
+                    <li>"What are the top 3 areas you'd like to grow in?"</li>
+                    <li>"What misconception do your coworkers have about you?"</li>
+                    <li>"How do you push your boundaries and limits?"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
